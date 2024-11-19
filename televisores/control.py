@@ -1,13 +1,8 @@
 
-from televisores.tv import Tv
 
 class Control:
 
-    tv=tv.Tv
-
-
-
-
+    tv=None
 
         # Metodos canal
     def canalUp(self):
@@ -38,6 +33,12 @@ class Control:
         if self.tv.estado:
             if volumen <= 7 and volumen >=0:
                 self.volumen=volumen
+    def turnOff(self):
+        self.tv.estado=False
+    def turnOn(self):
+        self.tv.estado=True
+
+
 
 
 

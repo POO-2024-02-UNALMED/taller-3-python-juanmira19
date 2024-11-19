@@ -1,16 +1,16 @@
-from control import Control
 
-class Tv:
-    control=control.Control
+
+class TV:
+    control=None
     canal=1
     volumen=1
     precio=500
-    numTv=0
+    numTV=0
 
     def __init__(self,marca,estado):
         self.marca=marca
         self.estado=estado
-        Tv.numTv+=1
+        TV.numTV+=1
 
     # Metodos control
     def getControl(self):
@@ -73,10 +73,10 @@ class Tv:
 
 
     @classmethod
-    def getNumTv():
-        return Tv.numTv
-    def setNumTv(numTv):
-        Tv.numTv=numTv
+    def getNumTV():
+        return TV.numTV
+    def setNumTV(numTv):
+        TV.numTv=numTv
     def getEstado(self):
         return self.estado
         
