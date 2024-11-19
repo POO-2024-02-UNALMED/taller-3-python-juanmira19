@@ -1,4 +1,4 @@
-from televisores.tv import TV
+from televisores.tv import Tv
 from televisores.marca import Marca
 from televisores.control import Control
 
