@@ -32,7 +32,7 @@ class Control:
     def setVolumen(self,volumen):
         if self.tv.estado:
             if volumen <= 7 and volumen >=0:
-                self.volumen=volumen
+                self.tv.volumen=volumen
     def turnOff(self):
         self.tv.estado=False
     def turnOn(self):
