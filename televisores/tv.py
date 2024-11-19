@@ -1,4 +1,4 @@
-
+from __future__ import annotations
 
 class TV:
     control=None
@@ -73,7 +73,7 @@ class TV:
         return self.estado
 
 
-
+    
 
     @classmethod
     def setNumTV(cls,num):
