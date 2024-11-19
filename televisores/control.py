@@ -1,41 +1,32 @@
 from __future__ import annotations
+from televisores.tv import TV
 class Control:
 
-    tv=None
+    def __init__(self):
+        self.tv=None
 
         # Metodos canal
     def canalUp(self):
-        if self.tv.estado:
-            if self.tv.canal >= 1 and self.tv.canal <= 119:
-                self.tv.canal+=1
+        self.tv.canalUp()
+            
     def canalDown(self):
-        if self.tv.estado:
-            if self.tv.canal >= 2 and self.tv.canal <= 120:
-                self.tv.canal-=1  
+        self.tv.canalDown()
     def setCanal(self,canal):
-        if self.tv.estado:
-            if canal>=1 and canal <=120:
-                self.tv.canal=canal
+        self.tv.setCanal(canal)
     
 
     # Metodos volumen
 
     def volumenUp(self):
-        if self.tv.estado:
-            if self.tv.volumen >= 0 and self.tv.volumen <= 6:
-                self.tv.volumen+=1
+        self.tv.volumenUp()
     def volumenDown(self):
-        if self.tv.estado:
-            if self.tv.volumen >= 1 and self.tv.volumen <= 7:
-                self.tv.volumen-=1
+        self.tv.volumenDown()
     def setVolumen(self,volumen):
-        if self.tv.estado:
-            if volumen <= 7 and volumen >=0:
-                self.tv.volumen=volumen
+        self.tv.setVolumen(volumen)
     def turnOff(self):
-        self.tv.estado=False
+        self.tv.turnOff()
     def turnOn(self):
-        self.tv.estado=True
+        self.tv.turnOn()
 
     def setTv(self,tv):
         self.tv=tv
