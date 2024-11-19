@@ -71,14 +71,17 @@ class TV:
         self.estado=False
     def getEstado(self):
         return self.estado
-    def getNumTV():
-        return TV.numTV
+
 
 
 
     @classmethod
     def setNumTV(cls,num):
         cls.numTv=num
+
+    @classmethod
+    def getNumTV(cls):
+        return cls.numTV
 
         
     
