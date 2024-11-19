@@ -38,6 +38,12 @@ class Control:
     def turnOn(self):
         self.tv.estado=True
 
+    def setTv(self,tv):
+        self.tv=tv
+    def getTv(self):
+        return self.tv
+        
+
 
 
 

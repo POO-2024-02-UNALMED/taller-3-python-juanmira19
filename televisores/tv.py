@@ -77,8 +77,8 @@ class TV:
         return TV.numTV
     def setNumTV(numTv):
         TV.numTv=numTv
-    def getEstado(self):
-        return self.estado
+    def getEstado():
+        return TV.estado
         
     
     
