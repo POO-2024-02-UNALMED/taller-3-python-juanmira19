@@ -1,15 +1,16 @@
 from __future__ import annotations
 
 class TV:
-    control=None
-    canal=1
-    volumen=1
-    precio=500
+    
     numTV=0
 
     def __init__(self,marca,estado):
         self.marca=marca
         self.estado=estado
+        control=None
+        canal=1
+        volumen=1
+        precio=500
         TV.numTV+=1
 
     # Metodos control
